@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Simone Mandola">
+    <title>Valor Actual de tu Criptomoneda</title>
+    <meta name="description" content="Descubre el valor actual de tu criptomoneda y más">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <div class="wrap">
+            <div class="cont-form">
+                <div class="landing">
+                    <h1 class="title-h1">Descubre el valor actual de tu criptomoneda</h1>
+                    <p class="text-xs">Escribe el nombre de la criptomoneda para saber su valor actual y más
+                        información.</p>
+                </div>
+                <div class="form">
+                    <form id="form">
+                        <div class="form__row">
+                            <label>
+                                <input type="text" id="currency" placeholder="Criptomoneda..."
+                                       autocomplete="off"
+                                       required>
+                            </label>
+                            <button class="btn" type="submit">Enviar</button>
+                        </div>
+                        <p class="text-xs error">¡Criptomoneda no encontrada!</p>
+                    </form>
+                </div>
+            </div>
+            <div class="cont-res">
+                <div class="cont-res__title">
+                    <h2 class="title-h2" id="data-currency">Criptomoneda</h2>
+                </div>
+                <div class="cont-res__data">
+                    <div class="cont-res__data-row">
+                        <h4 class="title-h4">Simbolo:</h4>
+                        <p class="text-m" id="data-symbol">n/a</p>
+                    </div>
+                    <div class="cont-res__data-row">
+                        <h4 class="title-h4">Operaciones en USD durante las últimas 24
+                            horas:</h4>
+                        <p class="text-m" id="data-volumen24H">n/a</p>
+                    </div>
+                    <div class="cont-res__data-row">
+                        <h4 class="title-h4">Precio (USD):</h4>
+                        <p class="text-m" id="data-price">n/a</p>
+                    </div>
+                    <div class="cont-res__data-row">
+                        <h4 class="title-h4">Precio medio el las últimas 24 horas:</h4>
+                        <p class="text-m" id="data-columenPrice24H">n/a</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
